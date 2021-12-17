@@ -1,0 +1,2 @@
+data.js: addresses and ABIs of token used for buying NFTs and the NFT contract itself
+For production as a node app, the https-localhost dependancy will not be needed. The client files must be served over HTTPS, but do not rely on the node server.
