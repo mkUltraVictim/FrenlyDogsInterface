@@ -1,33 +1,12 @@
 {
-  "name": "frenlydogsinterface",
-  "version": "1.0.0",
-  "description": "Website for minting FrenlyDogs NFTs",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ComputerSmoke/FrenlyDogsInterface.git"
-  },
-  "keywords": [
-    "NFT",
-    "Ether.js",
-    "Polygon"
-  ],
-  "author": "Addison Schmidt",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/ComputerSmoke/FrenlyDogsInterface/issues"
-  },
-  "homepage": "https://github.com/ComputerSmoke/FrenlyDogsInterface#readme",
   "dependencies": {
-    "@walletconnect/client": "^2.0.0-beta.20",
+    "app": "^0.1.0",
     "body-parser": "^1.19.1",
-    "ethers": "^5.5.2",
     "express": "^4.17.1",
-    "fs": "^0.0.1-security",
+    "express-rate-limit": "^5.5.1",
+    "helmet": "^4.6.0",
     "http": "^0.0.1-security",
-    "web3": "^1.6.1"
+    "https": "^1.0.0",
+    "https-localhost": "^4.7.0"
   }
 }

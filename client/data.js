@@ -1,11 +1,8 @@
-export const nftAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
-export const tokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-export const mintCost = "6905000000000000000000";
+const nftAddress = "0x2b291fC4DdDDA011cBfd3767f203CfE41Fe8B11d";
+const tokenAddress = "0x0F62CeB23b125724285509Ef1e460Bc4EcADc0d4";
+const mintCost = "6905000000000000000000";
 
-export const url = window.location.href;
-export const buyTypeDiv = document.getElementById("buyTypeDiv");
-
-export const nftAbi = [
+const nftAbi = [
     {
       "inputs": [
         {
@@ -641,9 +638,9 @@ export const nftAbi = [
       "stateMutability": "nonpayable",
       "type": "function"
     }
-  ]
+  ];
 
-export const tokenAbi =  [
+const tokenAbi =  [
     {
         "constant": true,
         "inputs": [],

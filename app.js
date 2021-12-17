@@ -1,19 +1,26 @@
-const express = require('express');
-const app = express();
+let express = require("express")
+const app = require("https-localhost")()
 const http = require('http');
-const Web3 = require('web3');
-const bodyParser = require('body-parser');
-const { ethers } = require("ethers");
-const fs = require("fs");
+var https = require('https');
+let rateLimit = require('express-rate-limit');
+const helmet = require("helmet");
+const bodyparser = require("body-parser");
 
-const httpServer = http.createServer(app);
-httpServer.listen(80, () => {
-	console.log('HTTP Server running on port 80');
+const limiter = rateLimit({
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 200 // limit each IP to 100 requests per windowMs
 });
-app.get('/',async function(req, res) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.sendFile(__dirname + '/client/home/index.html');
+app.listen(443)
+
+//landing page
+app.get('/',async function (req, res) {
+    res.sendFile(__dirname + '/client/index.html');
 });
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 app.use('/client',express.static(__dirname + '/client'));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(limiter);
+app.use(helmet({
+    contentSecurityPolicy: false
+}));
+app.use(bodyparser);
