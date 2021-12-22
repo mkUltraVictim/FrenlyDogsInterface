@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>FrenlyDogs</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Get some bootstrap default styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="client\styles1.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <ul class="nav">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/fnd/">FND</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+      </ul>
+    </div>
+    <div id="prepare">
+      <button class="btn btn-primary" id="btn-connect">
+        Connect wallet
+      </button>
+    </div>
+
+    <div id="connected" style="display: none">
+
+      <button class="btn btn-primary" id="btn-buy">
+        Buy
+      </button>
+
+    </div>
+
+    <div id="templates" style="display: none">
+      <template id="template-balance">
+        <tr>
+          <th class="address"></th>
+          <td class="balance"></td>
+        </tr>
+      </template>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <script type="text/javascript" src="./client/data.js"></script>
+    <script type="text/javascript" src="./client/index.js"></script>
+    <div>
+      <h1>
+    </div>
+  
+  </body>
+</html>
