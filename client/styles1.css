@@ -5,7 +5,7 @@
     text-align:center;
 }
 .nav li{
-    display:inline;
+    display:inline-block;
 }
 .nav a{
     display:inline-block;
