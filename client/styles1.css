@@ -1,8 +1,17 @@
+body {
+    background-image: url(./media/tile.png);
+}
 .nav{
+    position: fixed;
     list-style:none;
     margin:0;
     padding:0;
     text-align:center;
+    background:transparent;
+    left: 39.3%;
+    z-index: 100;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
 .nav li{
     display:inline-block;
@@ -10,4 +19,84 @@
 .nav a{
     display:inline-block;
     padding:10px;
+    font-size: 30px;
+    font-family: Orbitron;
+}
+
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+div.container {
+    height: 800px;
+    position: relative;
+    background:transparent;
+}
+
+div.container2 {
+    top: 60%;
+    position: relative;
+    background:transparent;
+}
+
+.btn-primary {
+    height: 50px;
+    width: 150px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    font-family: Orbitron;
+    letter-spacing: 1px;
+    border: 0;
+    outline: 0;
+    min-width: 32px;
+    align-self: center;
+    display: flex;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 11px;
+    align-items: center;
+    justify-content: center;
+    background: #cac6cb;
+    box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #fff, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
+}
+
+div.container3 {
+    font-family: Orbitron;
+    text-align: center;
+    width: 1000px;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    color: #4b7788;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+div.container4 h1{
+    font-family: Orbitron;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 52px;
+    color: #f0bc5c;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+img.logo {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
 }
